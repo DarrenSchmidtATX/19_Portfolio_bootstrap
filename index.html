@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/index.css">
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Darren Schmidt</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
+    <a href="#porfolio" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Portfolio</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      </div>
+    </div>
+<!--     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a> -->
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a>
+  <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Portfolio</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/books-connection-contemporary-459654.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/blur-cellphone-close-up-196644.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/Large_01.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+   <!--    <p><b>UX Researcher and Designer.</b></p> -->
+    </div>
+  </div>
+
+  <!-- The About Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px; min-height: 660px;" id="about">
+    <div id="fadeIn" style="display: none;">
+    <h2 class="w3-wide">About</h2>
+    <p class="w3-opacity"><i>Darren Schmidt</i></p>
+    <p class="w3-justify">I am a UX Researcher that enjoys helping teams develop world class user experiences. Creating compelling user experiences to improve brand loyalty, customer retention, and deliver delightment. ​Originally from Stony Brook, NY and I moved to Austin, TX in 2015. I have a MA degree in Ed. Tech, as well as many years of experience as a teacher. Outside of teaching, I have worked in positions for Ed tech companies, such as Macmillan Learning - working with product teams, doing research, consulting and (CX) customer experience work. I find systems thinking and the psychology of good design elements fascinating.  In my spare time, I enjoy writing and performing on stage, doing sketch and improv comedy.
+    </p>
+    <a class="w3-justify" href="Darren_Schmidt_Resume.pdf" target="blank">Resume</a>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>UX Research</p>
+        <img src="images/adult-businessman-businesswomen-1061588.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Educational Technology</p>
+        <img src="images/cameras-composition-data-1483937.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>UX Design</p>
+        <img src="images/apple-cell-phone-cellphone-607812.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third"></div>
+    
+    </div>
+  </div>
+  </div>
+
+  <!-- The Portfolio Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px; min-height: 660px;">
+  <div class="w3-black" id="portfolio" style="max-width: 840px; min-height: 800px;">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px; display: none;" id="portfolioFade"></div>
+      <h2 class="w3-wide w3-center">Portfolio</h2>
+      <p class="w3-opacity w3-center"><i>Darren Schmidt</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding toggle">
+         Skills
+         <span class="plus_minus">+</span>
+         <div class="toggleContainer">
+           <div class="w3-padding">Technical Skills: Affinity Diagramming, Journey Maps, Wireframing, User Testing, User Empathy, Comparative Analysis,
+            Qualitative and Quantitative Research Methods, Data Analysis, Adobe XD, Sketch, InVision, HTML, CSS</div>
+           <div class="w3-padding">Other Skills: ​Educational Technology, Public Speaking, Presentations, Collaboration, Project Management, Slack</div>
+           <!-- <div class="w3-padding">Solutions-savvy UX Researcher helping teams develop world class user experiences. Thrives on creating compelling user experiences to improve brand loyalty, customer retention, and deliver delightment. ​Excellent communication and effectively collaborates with others to ensure goals are achieved.</div> --> -->
+         </div>
+        </li>
+
+        <li class="w3-padding toggle">
+         Experience
+         <span class="plus_minus toggle">+</span>
+         <div class="toggleContainer">
+           <div class="w3-padding">Customer Experience. Abrams Learning Trends
+            ​2017 - 2018</div>
+           <div class="w3-padding">Learning Specialist. Macmillan Learning
+            ​2016</div>
+           <div class="w3-padding">Teacher.  Kyrene School District 2015</div>
+         </div>
+        </li>
+
+        <li class="w3-padding toggle">
+          Education
+         <span class="plus_minus toggle">+</span>
+         <div class="toggleContainer">
+           <div class="w3-padding">UX/UI Bootcamp Certificate: University of Texas​,​ McCombs School of Business​, Austin, TX</div>  
+           <div class="w3-padding">Master of Education, Educational Technology: Northern Arizona University​, Flagstaff, AZ</div>
+           <div class="w3-padding">Bachelor of Arts, Social Sciences: Arizona State University​, Tempe, AZ</div>
+         </div>
+        </li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/blur-cellphone-close-up-196644.jpg" alt="Greyhound Rescue" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Website Redesign</b></p>
+            <p class="w3-opacity">Greyhound Rescue</p>
+          <!--   <p>Stuff.</p> -->
+            <a class="w3-button w3-black w3-margin-bottom" role="button" href="index2.html">Case Study</a>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/books-connection-contemporary-459654.jpg" alt="USDA Gov Agency" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Website Redesign</b></p>
+            <p class="w3-opacity">USDA Gov. Agency</p>
+           <!--  <p>Stuff.</p> -->
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('portfolioModal').style.display='block'">Case Study</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/apple-cell-phone-cellphone-607812.jpg" alt="Neighborhood Pantry" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Mobile App</b></p>
+            <p class="w3-opacity">Neighborhood Pantry</p>
+         <!--    <p>Stuff.</p> -->
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('portfolioModal').style.display='block'">Case Study</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">Contact</h2>
+    <p class="w3-opacity w3-center"><i>Darren Schmidt</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+     <!--    <i class="..." style="width:30px"></i> Austin, TX, US<br> -->
+        <i class="fa fa-phone" style="width:30px"></i> Phone: 480-773-4657<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: dschmidt220@gmail.com<br>
+        <i class="fa fa-linkedin w3-hover-opacity"style="width:30px"> <br></i><a href="https://www.linkedin.com/in/dschmidt220/"target="blank"></a>
+        <a href="https://www.linkedin.com/in/dschmidt220/"target="blank">Linkedin</a><br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- End Page Content -->
+<!-- </div>
+<div class="preloader">
+    <img src="images/loading.png">
+</div>  -->
+  
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-small">
+<!--   <i class="fa fa-linkedin w3-hover-opacity"></i><a href="https://www.linkedin.com/in/dschmidt220/"target="blank"></a>
+  <a href="https://www.linkedin.com/in/dschmidt220/"target="blank">Linkedin</a><br> -->
+  <p> 2019 Darren Schmidt</p>
+</footer>
+
+<!-- <div class="preloader">
+  <img src="images/loading.png">
+</div> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/template.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
